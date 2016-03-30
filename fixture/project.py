@@ -48,4 +48,3 @@ class ProjectHelper:
                 id = element.find_element_by_css_selector('a').get_attribute("href").split('=')[-1]
                 self.contact_cache.append(Project(name=name, description=description, id=id))
         return list(self.contact_cache)
-
